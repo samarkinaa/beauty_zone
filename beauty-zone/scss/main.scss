@@ -1,0 +1,33 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/texts';
+@import './utils/utils';
+@import './utils/mixins';
+
+@import './components/adventages';
+@import './components/bottons';
+@import './components/carousel-button';
+@import './components/chef-card';
+@import './components/chefs-section';
+@import './components/contact-section';
+@import './components/footer';
+@import './components/form-terms';
+@import './components/formats-section';
+@import './components/format-card';
+@import './components/header';
+@import './components/hero-section';
+@import './components/input';
+@import './components/links';
+@import './components/mobile-menu';
+@import './components/modal';
+@import './components/pagination';
+@import './components/section';
+@import './components/traditions-section';
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: auto;
+    padding: 0 24px;
+}

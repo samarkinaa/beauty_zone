@@ -1,0 +1,120 @@
+.footer {
+    padding: 32px 0;
+    position: relative;
+    background-image: url('../images/footer-background.png');
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    &::before,
+    &::after {
+        position: absolute;
+        bottom: 0;
+        background-repeat: no-repeat;
+        content: '';
+    }
+
+    &::before {
+        width: 180px;
+        height: 120px;
+        left: 0;
+        background-image: url('../images/decor-bread-small.png');
+    }
+
+    &::after {
+        width: 380px;
+        height: 187px;
+        right: 0;
+        background-image: url('../images/decor-bread-large.png');
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+        }
+    }
+
+    &__nav,
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            flex-basis: 50%;
+            text-align: left;
+        }
+
+    }
+
+    &__logo,
+    &__menu {
+        flex-grow: 1;
+    }
+
+    &__address-list,
+    &__address-info {
+        flex-grow: 1;
+    }
+
+    &__address-link {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--color-primary-light);
+        text-decoration: none;
+    }
+
+    &__address-link:hover {
+        color: var(--color-brand-normal);
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &__address-icon {
+        fill: var(--color-primary-light);
+    }
+
+    &__address-icon:hover {
+        fill: var(--color-brand-normal);
+    }
+
+    &__address-copyright {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* .checkbox {
+  position: relative;
+}
+.checkbox-input {
+  appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--color-secondary-dark);
+}
+.checkbox-label {
+  padding-left: 24px;
+}
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  border: 1px solid var(--color-primary-dark);
+  border-radius: 2px;
+  content: '';
+} */
